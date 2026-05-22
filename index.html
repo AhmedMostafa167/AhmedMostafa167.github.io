@@ -1,854 +1,687 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
-  <!-- End Google Tag Manager -->
-  
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Ahmed Mostafa | Portfolio</title>
-  
-  <!-- Color Theme -->
-  <style>
-    :root {
-      --primary-color: #2d3436;
-      --secondary-color: #0984e3;
-      --accent-color: #00b894;
-      --text-light: #f5f6fa;
-      --text-dark: #2d3436;
-      --background-light: #f5f6fa;
-      --background-dark: #2d3436;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0a0a0f">
+
+    <title>Ahmed Mostafa — NLP / ML Engineer</title>
+    <meta name="description" content="Ahmed Mostafa — NLP & ML Engineer building production-grade LLM, RAG, and fine-tuned transformer systems. Computer Science graduate, quantum-computing researcher with a published paper, deployer of four flagship ML projects.">
+    <meta name="author" content="Ahmed Mostafa">
+
+    <meta property="og:title" content="Ahmed Mostafa — NLP / ML Engineer">
+    <meta property="og:description" content="Production-grade NLP/ML engineer. RAG with LangGraph, QLoRA fine-tuning, transformer classifiers, interactive dashboards.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ahmedmostafa167.github.io/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ahmed Mostafa — NLP / ML Engineer">
+    <meta name="twitter:description" content="Production-grade NLP/ML engineer. RAG, QLoRA, transformer classifiers.">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ahmed Mostafa",
+        "jobTitle": "NLP / ML Engineer",
+        "url": "https://ahmedmostafa167.github.io/",
+        "sameAs": [
+            "https://github.com/AhmedMostafa167",
+            "https://www.linkedin.com/in/ahmed-mostafa-dorra",
+            "https://www.kaggle.com/ahmedmostafadora"
+        ],
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Culture and Science City, Faculty of Computer Science"
+        }
     }
-  </style>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    </script>
 </head>
-
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  
-  <!-- ======= Header ======= -->
-  <header id="header" class="header">
-    <div class="container">
-      <h1><a href="index.html">Ahmed Mostafa</a></h1>
-      <h2>I'm <span class="typing"></span></h2>
-      
-      <nav class="nav-menu">
-        <ul>
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="https://drive.google.com/file/d/1_j9yk7DXHb14SkMYIYTb00GRLEB22b-c/view" target="_blank">Resume</a></li>
-          <li><a href="#contacts">Contact</a></li>
+    <canvas id="neural-bg" aria-hidden="true"></canvas>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="nav" aria-label="Primary">
+        <a href="#" class="nav__logo" aria-label="Ahmed Mostafa — home">
+            <span class="nav__logo-mark">{</span>
+            <span class="nav__logo-text">ahmed</span>
+            <span class="nav__logo-mark">}</span>
+        </a>
+        <ul class="nav__links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#publications">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
+        <a href="https://drive.google.com/file/d/1_j9yk7DXHb14SkMYIYTb00GRLEB22b-c/view"
+           target="_blank" rel="noopener" class="nav__cta">
+            <span>CV</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10M7 17L17 7"/></svg>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
 
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/ahmed-mostafa-dorra" target="_blank"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/AhmedMostafa167" target="_blank"><i class="bx bxl-github"></i></a>
-        <a href="mailto:newahmed1672022@gmail.com" target="_blank"><i class="bx bxl-google"></i></a>
-        <a href="https://www.kaggle.com/ahmedmostafadora" target="_blank"><i class="fab fa-kaggle"></i></a>
-      </div>
-    </div>
-  </header>
+    <main id="main">
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>About</h2>
-      </div>
+        <!-- ====== HERO ====== -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__inner">
+                <div class="hero__terminal" role="region" aria-label="Introduction">
+                    <div class="terminal__chrome">
+                        <span class="terminal__dot terminal__dot--red"></span>
+                        <span class="terminal__dot terminal__dot--yellow"></span>
+                        <span class="terminal__dot terminal__dot--green"></span>
+                        <span class="terminal__title">~/portfolio &mdash; zsh</span>
+                    </div>
+                    <div class="terminal__body">
+                        <div class="terminal__line">
+                            <span class="terminal__prompt">ahmed@nlp</span>
+                            <span class="terminal__sep">:</span>
+                            <span class="terminal__path">~</span>
+                            <span class="terminal__dollar">$</span>
+                            <span class="terminal__cmd">whoami</span>
+                        </div>
+                        <div class="terminal__line terminal__output" id="hero-title">
+                            <h1>Ahmed Mostafa</h1>
+                        </div>
 
-      <div class="about-grid">
-        <div class="profile-image">
-          <img src="assets/img/profile.jpeg" alt="Ahmed Mostafa">
+                        <div class="terminal__line">
+                            <span class="terminal__prompt">ahmed@nlp</span>
+                            <span class="terminal__sep">:</span>
+                            <span class="terminal__path">~</span>
+                            <span class="terminal__dollar">$</span>
+                            <span class="terminal__cmd">cat role.txt</span>
+                        </div>
+                        <div class="terminal__line terminal__output">
+                            <p class="hero__role">
+                                <span class="text-gradient" data-typing data-words='["NLP Engineer","ML Engineer","Gen-AI Engineer","Applied Researcher"]'></span>
+                                <span class="cursor">_</span>
+                            </p>
+                        </div>
+
+                        <div class="terminal__line">
+                            <span class="terminal__prompt">ahmed@nlp</span>
+                            <span class="terminal__sep">:</span>
+                            <span class="terminal__path">~</span>
+                            <span class="terminal__dollar">$</span>
+                            <span class="terminal__cmd">./about --short</span>
+                        </div>
+                        <div class="terminal__line terminal__output">
+                            <p class="hero__pitch">
+                                CS graduate building production-grade <em>LLM</em>, <em>RAG</em>,
+                                and <em>fine-tuned transformer</em> systems.
+                                Published quantum-computing researcher.
+                                Currently shipping <strong>four flagship AI projects</strong>.
+                            </p>
+                        </div>
+
+                        <div class="terminal__line">
+                            <span class="terminal__prompt">ahmed@nlp</span>
+                            <span class="terminal__sep">:</span>
+                            <span class="terminal__path">~</span>
+                            <span class="terminal__dollar">$</span>
+                            <span class="terminal__cmd">ls quick_links/</span>
+                        </div>
+                        <div class="terminal__line terminal__output">
+                            <div class="hero__cta">
+                                <a href="#projects" class="btn btn--primary">
+                                    <span>View projects</span>
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                                </a>
+                                <a href="#contact" class="btn btn--ghost">
+                                    <span>Get in touch</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__meta" aria-hidden="true">
+                    <div class="hero__meta-item">
+                        <span class="hero__meta-label">LOCATION</span>
+                        <span class="hero__meta-value">Egypt · Open to remote</span>
+                    </div>
+                    <div class="hero__meta-divider"></div>
+                    <div class="hero__meta-item">
+                        <span class="hero__meta-label">STATUS</span>
+                        <span class="hero__meta-value"><span class="status-dot"></span>Open to internships</span>
+                    </div>
+                    <div class="hero__meta-divider"></div>
+                    <div class="hero__meta-item">
+                        <span class="hero__meta-label">STACK</span>
+                        <span class="hero__meta-value">PyTorch · Transformers · LangGraph</span>
+                    </div>
+                </div>
+
+                <a href="#about" class="hero__scroll" aria-label="Scroll to about">
+                    <span></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ====== ABOUT ====== -->
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__num">01</span>
+                    <h2 class="section__title" id="about-title">About</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <div class="about__grid">
+                    <article class="about__bio reveal">
+                        <p class="about__lead">
+                            I'm <strong>Ahmed</strong>. Computer Science graduate, currently building NLP &amp; LLM systems
+                            with the same engineering discipline I'd want at a real job: typed configs, unit tests, Docker,
+                            CI, and one-command deployments. No demo-ware.
+                        </p>
+                        <p>
+                            My route into AI was unusual. I started in quantum computing — interned at QUAE Research developing
+                            an EEG classification pipeline with Quantum Variational Autoencoders, which became
+                            <a href="https://hal.science/hal-04501908" target="_blank" rel="noopener">a published paper</a>
+                            at the Neurogenomics 2024 conference. That experience taught me how to read papers,
+                            run rigorous experiments, and ship reproducible work.
+                        </p>
+                        <p>
+                            Now I focus on what I find most exciting: <em>language</em>. RAG architectures,
+                            parameter-efficient fine-tuning, and the engineering glue that turns a clever model into
+                            a useful product. Everything you see on this page is deployed and documented end-to-end.
+                        </p>
+                    </article>
+
+                    <aside class="about__stats reveal" aria-label="At a glance">
+                        <div class="stat">
+                            <span class="stat__value" data-counter="4">0</span>
+                            <span class="stat__label">Flagship<br>projects deployed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__value" data-counter="1">0</span>
+                            <span class="stat__label">Conference<br>publication</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__value" data-counter="10" data-suffix="+">0</span>
+                            <span class="stat__label">Specialization<br>certificates</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__value">2024</span>
+                            <span class="stat__label">CS<br>graduate</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== PROJECTS (BENTO) ====== -->
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__num">02</span>
+                    <h2 class="section__title" id="projects-title">Flagship Projects</h2>
+                    <div class="section__line"></div>
+                </div>
+                <p class="section__intro reveal">
+                    Four end-to-end systems. Each one is its own folder in
+                    <a href="https://github.com/AhmedMostafa167/Projects" target="_blank" rel="noopener">my monorepo</a>
+                    with structured <code>src/</code>, unit tests, a Dockerfile, and a one-command deploy script to Hugging Face Spaces.
+                </p>
+
+                <div class="bento">
+
+                    <article class="bento__card bento__card--featured reveal" style="--accent: 168, 85, 247;">
+                        <div class="bento__tag">FLAGSHIP · RAG</div>
+                        <h3 class="bento__title">Research Assistant</h3>
+                        <p class="bento__desc">
+                            Production-grade RAG over ArXiv + the open web. Built as a LangGraph state machine with
+                            hybrid retrieval (Chroma + BM25) and cross-encoder reranking. Multi-provider LLM backend
+                            switches with one env var.
+                        </p>
+
+                        <div class="bento__architecture" aria-hidden="true">
+                            <div class="arch-node">rewrite</div>
+                            <div class="arch-arrow">→</div>
+                            <div class="arch-node">retrieve</div>
+                            <div class="arch-arrow">→</div>
+                            <div class="arch-node">grade</div>
+                            <div class="arch-arrow">→</div>
+                            <div class="arch-node arch-node--active">generate</div>
+                            <div class="arch-arrow">→</div>
+                            <div class="arch-node">reflect</div>
+                        </div>
+
+                        <div class="bento__tech">
+                            <span>LangChain 0.3</span>
+                            <span>LangGraph</span>
+                            <span>Chroma</span>
+                            <span>FastAPI</span>
+                            <span>Gradio</span>
+                            <span>RAGAS</span>
+                        </div>
+                        <div class="bento__links">
+                            <a href="https://github.com/AhmedMostafa167/Projects/tree/main/01-LLM-RAG/research-assistant"
+                               class="bento__link" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.4 7.86 10.92.58.1.79-.25.79-.55v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.07 11.07 0 015.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.06.78 2.13v3.16c0 .31.21.66.79.55 4.57-1.52 7.86-5.84 7.86-10.92C23.5 5.65 18.35.5 12 .5z"/></svg>
+                                Code
+                            </a>
+                            <a href="https://huggingface.co/spaces/AhmedMostafa167/research-assistant"
+                               class="bento__link bento__link--demo" target="_blank" rel="noopener">
+                                Live demo
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10M7 17L17 7"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="bento__card reveal" style="--accent: 236, 72, 153;">
+                        <div class="bento__tag">FLAGSHIP · GENERATIVE FT</div>
+                        <h3 class="bento__title">Dialogue Summarization</h3>
+                        <p class="bento__desc">
+                            QLoRA fine-tune of Llama-3.2-3B-Instruct on SAMSum. 4-bit base + LoRA on q/k/v/o, trained with
+                            TRL's <code>SFTTrainer</code> with assistant-only loss masking. Modern rebuild of my earlier
+                            PEGASUS work.
+                        </p>
+                        <div class="bento__stat">
+                            <div><span class="num">~24M</span><span class="lbl">trainable<br>params</span></div>
+                            <div><span class="num">~0.75%</span><span class="lbl">of total<br>weights</span></div>
+                            <div><span class="num">~30 MB</span><span class="lbl">adapter<br>on disk</span></div>
+                        </div>
+                        <div class="bento__tech">
+                            <span>Llama-3.2</span>
+                            <span>PEFT</span>
+                            <span>TRL</span>
+                            <span>QLoRA</span>
+                            <span>HF Hub</span>
+                        </div>
+                        <div class="bento__links">
+                            <a href="https://github.com/AhmedMostafa167/Projects/tree/main/02-NLP-FineTuning/dialogue-summarization"
+                               class="bento__link" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.4 7.86 10.92.58.1.79-.25.79-.55v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.07 11.07 0 015.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.06.78 2.13v3.16c0 .31.21.66.79.55 4.57-1.52 7.86-5.84 7.86-10.92C23.5 5.65 18.35.5 12 .5z"/></svg>
+                                Code
+                            </a>
+                            <a href="https://huggingface.co/spaces/AhmedMostafa167/dialogue-summarization"
+                               class="bento__link bento__link--demo" target="_blank" rel="noopener">
+                                Live demo
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10M7 17L17 7"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="bento__card reveal" style="--accent: 6, 182, 212;">
+                        <div class="bento__tag">FLAGSHIP · DISCRIMINATIVE FT</div>
+                        <h3 class="bento__title">Banking Intent Classifier</h3>
+                        <p class="bento__desc">
+                            Full fine-tune of ModernBERT-base on Banking77. 77 intent classes. Temperature scaling for
+                            calibration — when the demo says "92% sure", it's right about 92% of the time.
+                        </p>
+                        <div class="bento__tech">
+                            <span>ModernBERT</span>
+                            <span>PyTorch</span>
+                            <span>scikit-learn</span>
+                            <span>Calibration</span>
+                            <span>Gradio</span>
+                        </div>
+                        <div class="bento__links">
+                            <a href="https://github.com/AhmedMostafa167/Projects/tree/main/04-Deep-Learning/text-classification-modernbert"
+                               class="bento__link" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.4 7.86 10.92.58.1.79-.25.79-.55v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.07 11.07 0 015.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.06.78 2.13v3.16c0 .31.21.66.79.55 4.57-1.52 7.86-5.84 7.86-10.92C23.5 5.65 18.35.5 12 .5z"/></svg>
+                                Code
+                            </a>
+                            <a href="https://huggingface.co/spaces/AhmedMostafa167/modernbert-banking77"
+                               class="bento__link bento__link--demo" target="_blank" rel="noopener">
+                                Live demo
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10M7 17L17 7"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="bento__card reveal" style="--accent: 34, 197, 94;">
+                        <div class="bento__tag">FLAGSHIP · EDA & PRODUCT</div>
+                        <h3 class="bento__title">LA Crime Dashboard</h3>
+                        <p class="bento__desc">
+                            Multi-page Streamlit + Plotly dashboard over 185k LAPD records. Turned a one-off notebook
+                            into a tool a stakeholder can actually use.
+                        </p>
+                        <div class="bento__tech">
+                            <span>Streamlit</span>
+                            <span>Plotly</span>
+                            <span>pandas</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="bento__links">
+                            <a href="https://github.com/AhmedMostafa167/Projects/tree/main/03-EDA-Dashboards/la-crime-analysis"
+                               class="bento__link" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.4 7.86 10.92.58.1.79-.25.79-.55v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.07 11.07 0 015.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.06.78 2.13v3.16c0 .31.21.66.79.55 4.57-1.52 7.86-5.84 7.86-10.92C23.5 5.65 18.35.5 12 .5z"/></svg>
+                                Code
+                            </a>
+                            <a href="https://huggingface.co/spaces/AhmedMostafa167/la-crime-dashboard"
+                               class="bento__link bento__link--demo" target="_blank" rel="noopener">
+                                Live demo
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10M7 17L17 7"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <details class="more-projects reveal">
+                    <summary>
+                        <span>Earlier work &amp; experiments</span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </summary>
+                    <div class="more-projects__grid">
+                        <a href="https://www.kaggle.com/code/ahmedmostafadora" target="_blank" rel="noopener" class="mini-project">
+                            <h4>BERT for SMS Spam</h4>
+                            <p>99.1% accuracy fine-tuning BERT for SMS spam classification</p>
+                            <span class="mini-project__tech">Transformers · Datasets</span>
+                        </a>
+                        <a href="https://www.kaggle.com/code/ahmedmostafadora" target="_blank" rel="noopener" class="mini-project">
+                            <h4>DistilBERT: extractor vs classifier</h4>
+                            <p>Comparing two approaches, F1 of 0.933 on both</p>
+                            <span class="mini-project__tech">Transformers · scikit-learn</span>
+                        </a>
+                        <a href="https://www.kaggle.com/code/ahmedmostafadora" target="_blank" rel="noopener" class="mini-project">
+                            <h4>Word2Vec + SVC sentiment</h4>
+                            <p>Word2Vec embeddings + Linear SVC, 86% accuracy</p>
+                            <span class="mini-project__tech">Gensim · spaCy</span>
+                        </a>
+                        <a href="https://github.com/AhmedMostafa167" target="_blank" rel="noopener" class="mini-project">
+                            <h4>VISIONEER</h4>
+                            <p>Android AR app for floor-plan visualization with HF Diffusers</p>
+                            <span class="mini-project__tech">Diffusers · Java · AR</span>
+                        </a>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <!-- ====== SKILLS ====== -->
+        <section class="section" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__num">03</span>
+                    <h2 class="section__title" id="skills-title">Skills</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <div class="skills__grid">
+                    <div class="skill-card reveal" data-category="languages">
+                        <div class="skill-card__head">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+                            <h3>Languages</h3>
+                        </div>
+                        <ul class="skill-card__list">
+                            <li><span>Python</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 95%"></span></span></li>
+                            <li><span>SQL</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 70%"></span></span></li>
+                            <li><span>JavaScript</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 55%"></span></span></li>
+                            <li><span>Java</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 50%"></span></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card reveal" data-category="dl">
+                        <div class="skill-card__head">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/></svg>
+                            <h3>Deep Learning</h3>
+                        </div>
+                        <ul class="skill-card__list">
+                            <li><span>PyTorch</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 85%"></span></span></li>
+                            <li><span>TensorFlow / Keras</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 75%"></span></span></li>
+                            <li><span>HF Transformers</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 85%"></span></span></li>
+                            <li><span>PEFT / TRL</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 75%"></span></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card reveal" data-category="llm">
+                        <div class="skill-card__head">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                            <h3>LLM &amp; Gen-AI</h3>
+                        </div>
+                        <ul class="skill-card__list">
+                            <li><span>LangChain / LangGraph</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 85%"></span></span></li>
+                            <li><span>RAG (hybrid + rerank)</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 85%"></span></span></li>
+                            <li><span>LoRA / QLoRA fine-tuning</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 80%"></span></span></li>
+                            <li><span>Prompt engineering</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 80%"></span></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card reveal" data-category="nlp">
+                        <div class="skill-card__head">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h12"/></svg>
+                            <h3>Classical NLP</h3>
+                        </div>
+                        <ul class="skill-card__list">
+                            <li><span>spaCy / NLTK / Gensim</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 75%"></span></span></li>
+                            <li><span>Word2Vec / FastText</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 70%"></span></span></li>
+                            <li><span>Sentence-Transformers</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 80%"></span></span></li>
+                            <li><span>Eval (ROUGE, BERTScore, RAGAS)</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 80%"></span></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card reveal" data-category="data">
+                        <div class="skill-card__head">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0018 0V5M3 12a9 3 0 0018 0"/></svg>
+                            <h3>Data &amp; Viz</h3>
+                        </div>
+                        <ul class="skill-card__list">
+                            <li><span>pandas / NumPy</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 90%"></span></span></li>
+                            <li><span>Plotly / Matplotlib</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 85%"></span></span></li>
+                            <li><span>Streamlit / Gradio</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 85%"></span></span></li>
+                            <li><span>scikit-learn</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 85%"></span></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card reveal" data-category="eng">
+                        <div class="skill-card__head">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <h3>Engineering</h3>
+                        </div>
+                        <ul class="skill-card__list">
+                            <li><span>FastAPI / Uvicorn</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 75%"></span></span></li>
+                            <li><span>Docker / Compose</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 75%"></span></span></li>
+                            <li><span>Git / GitHub Actions</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 80%"></span></span></li>
+                            <li><span>HF Hub / Spaces</span><span class="skill-bar"><span class="skill-bar__fill" style="--w: 85%"></span></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== EXPERIENCE & EDUCATION (TIMELINE) ====== -->
+        <section class="section" id="experience" aria-labelledby="experience-title">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__num">04</span>
+                    <h2 class="section__title" id="experience-title">Experience &amp; Education</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <ol class="timeline">
+                    <li class="timeline__item reveal">
+                        <div class="timeline__dot" data-type="work"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">Oct 2024 — Nov 2024</span>
+                            <h3 class="timeline__title">Teaching Assistant</h3>
+                            <span class="timeline__org">Culture and Science City · Faculty of Computer Science</span>
+                            <ul class="timeline__bullets">
+                                <li>Led tutorials on linear algebra fundamentals and applications</li>
+                                <li>Programming-language theory and practice sessions</li>
+                                <li>Walkthroughs on modern information-retrieval systems</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__dot" data-type="education"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">Oct 2023 — Jul 2024</span>
+                            <h3 class="timeline__title">Diploma in Quantum Computing</h3>
+                            <span class="timeline__org">QWorld</span>
+                            <ul class="timeline__bullets">
+                                <li>Quantum algorithms, quantum machine learning, quantum information theory</li>
+                                <li>Earned QCOURSE 101-1, QBronze, QSilver, QNickel certifications</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__dot" data-type="work"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">Dec 2023 — Mar 2024</span>
+                            <h3 class="timeline__title">Quantum Research Intern</h3>
+                            <span class="timeline__org">QUAE Research</span>
+                            <ul class="timeline__bullets">
+                                <li>Developed an EEG classification pipeline using Quantum Variational Autoencoders</li>
+                                <li>Contributed to published research on quantum-enhanced signal denoising</li>
+                                <li>Paper accepted at the Neurogenomics 2024 Conference</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="timeline__item reveal">
+                        <div class="timeline__dot" data-type="education"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">Oct 2020 — Jul 2024</span>
+                            <h3 class="timeline__title">BS in Computer Science</h3>
+                            <span class="timeline__org">Culture and Science City · Faculty of Computer Science</span>
+                            <ul class="timeline__bullets">
+                                <li>Relevant coursework: Software Engineering, Data Structures &amp; Algorithms, Machine Learning &amp; AI</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="certs reveal" aria-label="Featured certifications">
+                    <h3 class="certs__title">Featured Certifications</h3>
+                    <div class="certs__grid">
+                        <span class="cert">Machine Learning Specialization · Stanford</span>
+                        <span class="cert">Deep Learning Specialization · DeepLearning.AI</span>
+                        <span class="cert">Natural Language Processing · DeepLearning.AI</span>
+                        <span class="cert">Generative AI with LLMs · DeepLearning.AI</span>
+                        <span class="cert">Math for ML &amp; Data Science · DeepLearning.AI</span>
+                        <span class="cert">Applied Text Mining · U. of Michigan</span>
+                        <span class="cert">Data Analyst with Python · DataCamp</span>
+                        <span class="cert">Vector Databases (Pinecone) · 365 DataScience</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== PUBLICATION HIGHLIGHT ====== -->
+        <section class="section section--feature" id="publications" aria-labelledby="publications-title">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__num">05</span>
+                    <h2 class="section__title" id="publications-title">Research</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <article class="publication reveal">
+                    <div class="publication__badge">PUBLISHED · NEUROGENOMICS 2024</div>
+                    <h3 class="publication__title">
+                        Quantum Denoising in the Realm of Brain-Computer Interfaces: A Preliminary Study
+                    </h3>
+                    <p class="publication__abstract">
+                        We explore how a Quantum Variational Autoencoder can denoise EEG signals before classification,
+                        evaluated on a brain-computer-interface task. Published at the Neurogenomics 2024 Conference; my
+                        contribution was the EEG classification pipeline and the comparative evaluation against classical
+                        baselines.
+                    </p>
+                    <div class="publication__meta">
+                        <span class="publication__venue">Neurogenomics 2024 Conference</span>
+                        <a href="https://hal.science/hal-04501908" target="_blank" rel="noopener" class="publication__link">
+                            Read on HAL
+                            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10M7 17L17 7"/></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ====== CONTACT ====== -->
+        <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__num">06</span>
+                    <h2 class="section__title" id="contact-title">Contact</h2>
+                    <div class="section__line"></div>
+                </div>
+
+                <div class="contact reveal">
+                    <h3 class="contact__pitch">
+                        Looking for an <span class="text-gradient">NLP / ML engineering intern</span> who ships?
+                    </h3>
+                    <p class="contact__sub">
+                        I'm actively interviewing for summer 2026 internships. Remote or hybrid. Let's talk.
+                    </p>
+
+                    <div class="contact__grid">
+                        <a class="contact__card" href="mailto:newahmed1672022@gmail.com">
+                            <div class="contact__icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <span class="contact__label">EMAIL</span>
+                            <span class="contact__value">newahmed1672022@gmail.com</span>
+                        </a>
+
+                        <a class="contact__card" href="https://www.linkedin.com/in/ahmed-mostafa-dorra" target="_blank" rel="noopener">
+                            <div class="contact__icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+                            </div>
+                            <span class="contact__label">LINKEDIN</span>
+                            <span class="contact__value">ahmed-mostafa-dorra</span>
+                        </a>
+
+                        <a class="contact__card" href="https://github.com/AhmedMostafa167" target="_blank" rel="noopener">
+                            <div class="contact__icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.4 7.86 10.92.58.1.79-.25.79-.55v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.07 11.07 0 015.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.06.78 2.13v3.16c0 .31.21.66.79.55 4.57-1.52 7.86-5.84 7.86-10.92C23.5 5.65 18.35.5 12 .5z"/></svg>
+                            </div>
+                            <span class="contact__label">GITHUB</span>
+                            <span class="contact__value">AhmedMostafa167</span>
+                        </a>
+
+                        <a class="contact__card" href="https://www.kaggle.com/ahmedmostafadora" target="_blank" rel="noopener">
+                            <div class="contact__icon">
+                                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.358"/></svg>
+                            </div>
+                            <span class="contact__label">KAGGLE</span>
+                            <span class="contact__value">ahmedmostafadora</span>
+                        </a>
+                    </div>
+
+                    <a href="https://drive.google.com/file/d/1_j9yk7DXHb14SkMYIYTb00GRLEB22b-c/view"
+                       target="_blank" rel="noopener" class="contact__cv">
+                        <span>Download CV</span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span>&copy; 2026 Ahmed Mostafa</span>
+            <span class="footer__sep">·</span>
+            <span>Built with vanilla HTML, CSS &amp; JS</span>
+            <span class="footer__sep">·</span>
+            <a href="https://github.com/AhmedMostafa167/Projects/tree/main/portfolio" target="_blank" rel="noopener">Source</a>
         </div>
-        <div class="about-content">
-          <p class="lead">
-            Computer Science graduate and aspiring NLP Engineer passionate about building intelligent AI solutions. With a strong foundation in machine learning, deep learning, and large language models, I specialize in developing and optimizing NLP applications. Continuously exploring the intersection of theory and real-world implementation, I thrive on solving complex challenges through research-driven innovation and hands-on experimentation. While my primary focus is on advancing AI and NLP, I have also explored Quantum Computing, appreciating its potential to reshape computational paradigms in the future.
-          <div class="about-details">
-            <div class="detail-item">
-              <i class="bx bx-calendar"></i>
-              <div>
-                <h4>Birthday</h4>
-                <p>16 July 2001</p>
-              </div>
-            </div>
-            <div class="detail-item">
-              <i class="bx bx-map"></i>
-              <div>
-                <h4>Location</h4>
-                <p>6 October, Giza, Egypt</p>
-              </div>
-            </div>
-            <div class="detail-item">
-              <i class="bx bx-envelope"></i>
-              <div>
-                <h4>Email</h4>
-                <p>newahmed1672022@gmail.com</p>
-              </div>
-            </div>
-            <div class="detail-item">
-              <i class="bx bx-phone"></i>
-              <div>
-                <h4>Phone</h4>
-                <p>+20 100-614-8440</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- ======= Education Section ======= -->
-  <section id="education" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Education</h2>
-      </div>
-
-      <div class="education-grid">
-        <div class="education-card">
-          <div class="edu-header">
-            <img src="assets/img/education/bs.png" alt="BS Icon">
-            <div>
-              <h3>BS in Computer Science</h3>
-              <p class="meta">October 2020 - July 2024</p>
-              <p class="university">Culture and Science City, Faculty of Computer Science</p>
-            </div>
-          </div>
-          <div class="edu-body">
-            <h4>Relevant Coursework</h4>
-            <ul class="course-list">
-              <li>Software Engineering</li>
-              <li>Data Structures & Algorithms</li>
-              <li>Machine Learning & AI</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="education-card">
-          <div class="edu-header">
-            <img src="assets/img/education/diploma.jpg" alt="Diploma Icon">
-            <div>
-              <h3>Diploma in Quantum Computing</h3>
-              <p class="meta">October 2023 - July 2024</p>
-              <p class="university">QWorld</p>
-            </div>
-          </div>
-          <div class="edu-body">
-            <h4>Relevant Coursework</h4>
-            <ul class="course-list">
-              <li>Quantum Algorithms</li>
-              <li>Quantum Machine Learning</li>
-              <li>Quantum Information Theory</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Courses and Certificates in a separate row -->
-      <div class="section-subtitle">
-        <h3>Courses & Certificates</h3>
-      </div>
-      
-      <div class="certificates-grid">
-        <div class="education-card certificate-card">
-          <div class="edu-header">
-            <img src="assets/img/education/courses.png" alt="Courses Icon">
-            <div>
-              <h3>Professional Development</h3>
-            </div>
-          </div>
-          <div class="edu-body">
-            <div class="certificate-item">
-              <h4>Machine Learning specialization</h4>
-              <p class="meta">Stanford Online</p>
-              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/KCPFH98WHEUW" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <div class="certificate-item">
-              <h4>Deep Learning specialization</h4>
-              <p class="meta">Deeplearning.ai</p>
-              <a href="https://www.credly.com/badges/0dbed3cf-08ec-40ed-a7d0-794b85092c18/linked_in_profile" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <div class="certificate-item">
-              <h4>Natural Language Processing specialization</h4>
-              <p class="meta">Deeplearning.ai</p>
-              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/XDE1W322BD77" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-            
-            <div class="certificate-item">
-              <h4>Mathematics for Machine Learning and Data Science</h4>
-              <p class="meta">Deeplearning.ai</p>
-              <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/X69EYDE8QP5G" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-            
-            <div class="certificate-item">
-              <h4>Applied Text Mining in Python</h4>
-              <p class="meta">michigan University</p>
-              <a href="https://www.coursera.org/account/accomplishments/certificate/Y7B4FVSZKI0F" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-            <div class="certificate-item">
-              <h4>Generative AI with Large Language Models</h4>
-              <p class="meta">Deeplearning.ai</p>
-              <a href="https://www.coursera.org/account/accomplishments/certificate/9WDEVG52XDHU" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-            <div class="certificate-item">
-              <h4>Data Analyst with Python</h4>
-              <p class="meta">DataCamp</p>
-              <a href="https://www.datacamp.com/statement-of-accomplishment/track/eba587b7070f3818d475c0c410171067497c9b9f" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-            <div class="certificate-item">
-              <h4>Build Chat Applications with OpenAI and LangChain</h4>
-              <p class="meta">365 DataScience</p>
-              <a href="https://learn.365datascience.com/c/41c1dd9d09" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-            <div class="certificate-item">
-              <h4>Introduction to Vector Databases with Pinecone</h4>
-              <p class="meta">365 DataScience</p>
-              <a href="https://learn.365datascience.com/c/41c1dd9d09" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-            <div class="certificate-item">
-              <h4>Git and GitHub</h4>
-              <p class="meta">365 DataScience</p>
-              <a href="https://learn.365datascience.com/c/31aec12f36/" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-            <div class="certificate-item">
-              <h4>QCOURSE 101-1</h4>
-              <p class="meta">QWorld</p>
-              <a href="https://drive.google.com/file/d/13P2X8Q4pBSFwdjBCIUcwFbeL4YMZioDp/view?usp=drive_link" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-            <div class="certificate-item">
-              <h4>QBronze</h4>
-              <p class="meta">QWorld</p>
-              <a href="https://drive.google.com/file/d/1gLzR37c3_kkVMxyNy-JBpvlNuzsAxm0V/view?usp=drive_link" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-            <div class="certificate-item">
-              <h4>QSilver</h4>
-              <p class="meta">QWorld</p>
-              <a href="https://drive.google.com/file/d/13olE69xAxmAW_C9xxoPVHT7f32EUU9uq/view?usp=drive_link" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-
-            <div class="certificate-item">
-              <h4>QNickel</h4>
-              <p class="meta">QWorld</p>
-              <a href="https://drive.google.com/file/d/1ske9nd6SKZUns_44M8Oo685bA9YI8IpI/view?usp=drive_link" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <!-- 
-            Template for adding new courses:
-            <div class="certificate-item">
-              <h4>[COURSE_NAME]</h4>
-              <p class="meta">[PROVIDER]</p>
-              <a href="[CERTIFICATE_LINK]" target="_blank" class="cert-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
-            </div>
-            -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Experience Section ======= -->
-  <section id="experience" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Experience</h2>
-      </div>
-
-      <div class="experience-timeline">
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <h3>Culture and Science City</h3>
-            <p class="meta">October 2024 - November 2024</p>
-          </div>
-          <div class="timeline-content">
-            <h4>Teaching Assistant</h4>
-            <ul>
-              <li>Linear Algebra fundamentals and applications</li>
-              <li>Programming language theory and practice</li>
-              <li>Modern information retrieval systems</li>
-            </ul>
-          </div>
-        </div>
-
-       <!-- Modified Experience Section With Paper Link -->
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <h3>QUAE Research</h3>
-            <p class="meta">December 2023 - March 2024</p>
-          </div>
-          <div class="timeline-content">
-            <h4>Quantum Research Intern</h4>
-            <ul>
-              <li>Developed EEG classification pipeline using QVAE</li>
-              <li>Published research on <a href="https://hal.science/hal-04501908" target="_blank">quantum-enhanced signal Denoising</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-<!-- New Publications Section (Place this after Experience section and before Projects section) -->
-<section id="publications" class="section">
-  <div class="container">
-    <div class="section-title">
-      <h2>Publications</h2>
-      <p>Research Contributions</p>
-    </div>
-
-    <div class="publications-grid">
-      <div class="publication-card">
-        <div class="publication-header">
-          <i class="fas fa-file-alt"></i>
-          <div class="publication-links">
-            <a href="https://hal.science/hal-04501908" target="_blank">
-              <i class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-        </div>
-        <div class="publication-body">
-          <h3>Quantum Denoising in the Realm of Brain-Computer Interfaces: A Preliminary Study</h3>
-          <p class="publication-meta">Neurogenomics 2024 Conference</p>
-          <p class="publication-abstract">
-            This research explores the application of quantum autoencoders for feature extraction from EEG data in brain-computer interfaces. 
-            We investigated whether quantum denoising could improve feature extraction from noisy signals in a cross-session experiment where 
-            participants performed tasks of varying difficulty levels. Our findings revealed limitations in the quantum approach, with no 
-            significant advantage over traditional methods, while identifying promising avenues for future quantum computing applications in 
-            neuroscience.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-|
-
-  <!-- ======= Projects Section ======= -->
-  <section id="portfolio" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Projects</h2>
-        <p>Code implementations and some kaggle projects, Check other projects <a href="https://www.kaggle.com/ahmedmostafadora">here</a></p>
-      </div>
-
-      <div class="project-grid">
-        <div class="project-card">
-          <div class="project-header">
-            <i class="fas fa-robot"></i>
-            <div class="project-links">
-              <a href="https://github.com/AhmedMostafa167/PEGASUS-DialogueSum" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>PEGASUS DialogueSum</h3>
-            <p>Fine-tuning PEGASUS for dialogue summarization</p>
-            <div class="tech-tags">
-              <span>HuggingFace Transformers</span>
-              <span>NLP</span>
-              <span>PyTorch</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <i class="fas fa-robot"></i>
-            <div class="project-links">
-              <a href="https://github.com/AhmedMostafa167/langchain-research-assistant" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>LangChain Research Assistant</h3>
-            <p>a tool designed to streamline research workflows by generating summaries, structured reports, and insightful analyses using AI. It integrates LangChain's Runnable interfaces and Hugging Face's Phi-3.5-mini-instruct model to process academic queries effectively.</p>
-            <div class="tech-tags">
-              <span>LangChain</span>
-              <span>Huggingface Transformers</span>
-              <span>FastAPI</span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="project-card">
-          <div class="project-header">
-            <i class="fas fa-robot"></i>
-            <div class="project-links">
-              <a href="https://github.com/Ali-Mohamed109/VISIONEER_APP" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>VISIONEER</h3>
-            <p>VISIONEER is an Android application designed to streamline the process of creating, editing, and visualizing floor plans. This app is particularly useful for architects, engineers, and stakeholders who need to communicate design ideas effectively.</p>
-            <div class="tech-tags">
-              <span>HuggingFace Diffusers</span>
-              <span>Java</span>
-              <span>AR</span>
-            </div>
-          </div>
-        </div> 
-        
-        <div class="project-card">
-          <div class="project-header">
-            <i class="fas fa-robot"></i>
-            <div class="project-links">
-              <a href="https://www.kaggle.com/code/ahmedmostafadora/distilbert-as-feature-extractor-vs-as-classifier" target="_blank">
-                <i class="fab fa-kaggle"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>DistilBERT as Feature Extractor VS as Classifier</h3>
-            <p>DistilBERT as a feature Extractor with Logistic Regression Classifier achieved  an F1-score of 0.932838 while Fine-tuning it with a classification head achieved an F1-score of 0.932838</p>
-            <div class="tech-tags">
-              <span>Transformers</span>
-              <span>Datasets</span>
-              <span>Pandas</span>
-              <span>Scikit-Learn</span>
-              <span>Matplotlib</span>
-            </div>
-          </div>
-        </div> 
-
-        <div class="project-card">
-          <div class="project-header">
-            <i class="fas fa-robot"></i>
-            <div class="project-links">
-              <a href="https://www.kaggle.com/code/ahmedmostafadora/sms-spam-classification-w-bert-using" target="_blank">
-                <i class="fab fa-kaggle"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>SMS Spam Classification w/ BERT using 🤗</h3>
-            <p>Fine-tuning BERT for SMS Spam Classification and achieving 99.1% accuracy on the validation set with a validation loss of 0.06170</p>
-            <div class="tech-tags">
-              <span>Transformers</span>
-              <span>Datasets</span>
-              <span>Evaluate</span>
-            </div>
-          </div>
-        </div> 
-
-        <div class="project-card">
-          <div class="project-header">
-            <i class="fas fa-robot"></i>
-            <div class="project-links">
-              <a href="https://www.kaggle.com/code/ahmedmostafadora/sentiment-classification-using-word2vec-svc" target="_blank">
-                <i class="fab fa-kaggle"></i>
-              </a>
-            </div>
-          </div>
-          <div class="project-body">
-            <h3>Sentiment Classification using Word2Vec & SVC</h3>
-            <p>Training Word2Vec Embeddings from scratch on movie reviews and  using it with Gradient Boosting model for classification of movie reviews achieved 85% accuracy, while using it with Linear SVC achieved 86% accuracy</p>
-            <div class="tech-tags">
-              <span>Gensim</span>
-              <span>Spacy</span>
-              <span>Scikit-Learn</span>
-              <span>Matplotlib</span>
-            </div>
-          </div>
-        </div> 
-        <!-- Repeat similar structure for other projects -->
-        
-        <!-- 
-        Template for adding new projects:
-        <div class="project-card">
-          <div class="project-header">
-            <i class="fas fa-[ICON_NAME]"></i>
-            <div class="project-links">
-              <a href="[PROJECT_GITHUB_URL]" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-              <!-- Add demo link if available -->
-              <!-- <a href="[PROJECT_DEMO_URL]" target="_blank">
-                <i class="fas fa-external-link-alt"></i>
-              </a> -->
-            <!-- </div>
-          </div>
-          <div class="project-body">
-            <h3>[PROJECT_TITLE]</h3>
-            <p>[PROJECT_DESCRIPTION]</p>
-            <div class="tech-tags">
-              <span>[TECHNOLOGY_1]</span>
-              <span>[TECHNOLOGY_2]</span>
-              <span>[TECHNOLOGY_3]</span>
-            </div>
-          </div>
-        </div>
-        -->
-      </div>
-      
-    </div>
-  </section>
-
-
-  
-  <!-- ======= Skills Section ======= -->
-  <section id="skills" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
-        <p>Technical Proficiency</p>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-item">
-          <div class="skill-info">
-            <span>Python</span>
-            <span>90%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="progress" style="width: 90%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <div class="skill-info">
-            <span>Tensorflow</span>
-            <span>70%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="progress" style="width: 70%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <div class="skill-info">
-            <span>Pytorch</span>
-            <span>80%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="progress" style="width: 80%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <div class="skill-info">
-            <span>LangChain</span>
-            <span>75%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="progress" style="width: 65%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <div class="skill-info">
-            <span>Scikit-Learn</span>
-            <span>80%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="progress" style="width: 80%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <div class="skill-info">
-            <span>Spacy, NLTK, Gensim</span>
-            <span>60%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="progress" style="width: 60%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <div class="skill-info">
-            <span>Transformers, Datasets, Evaluate</span>
-            <span>70%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="progress" style="width:70%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <div class="skill-info">
-            <span>Numpy, Pandas</span>
-            <span>80%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="progress" style="width: 80%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <div class="skill-info">
-            <span>Matplotlib, seaborn</span>
-            <span>80%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="progress" style="width: 80%"></div>
-          </div>
-        </div>
-
-        <div class="skill-item">
-          <div class="skill-info">
-            <span>FastAPI</span>
-            <span>60%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="progress" style="width: 60%"></div>
-          </div>
-        </div>
-        <!-- Repeat for other skills -->
-        
-        <!-- 
-        Template for adding new skills:
-        <div class="skill-item">
-          <div class="skill-info">
-            <span>[SKILL_NAME]</span>
-            <span>[PROFICIENCY_PERCENTAGE]%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="progress" style="width: [PROFICIENCY_PERCENTAGE]%"></div>
-          </div>
-        </div>
-        -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contacts" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Get in Touch</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="info-item">
-            <i class="bx bx-map"></i>
-            <div>
-              <h4>Location</h4>
-              <p>Menouf, Al-minoufia, Egypt</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="bx bx-envelope"></i>
-            <div>
-              <h4>Email</h4>
-              <p>newahmed1672022@gmail.com</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <i class="bx bx-phone"></i>
-            <div>
-              <h4>Call</h4>
-              <p>+20 100-614-8440</p>
-            </div>
-          </div>
-        </div>
-
-        <form class="contact-form">
-          <div class="form-group">
-            <input type="text" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-            <input type="text" placeholder="Subject" required>
-          </div>
-          <div class="form-group">
-            <textarea rows="5" placeholder="Message" required></textarea>
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-
-  <!-- Main JS -->
-  <script>
-    // Typing Animation
-    new Typed('.typing', {
-      strings: ["ML Engineer", "NLP Engineer", "Gen AI Engineer"],
-      typeSpeed: 80,
-      backSpeed: 60,
-      loop: true
-    });
-  </script>
-  
-  <!-- Additional CSS for the new layout -->
-  <style>
-    /* Styling for the certificates section */
-    .section-subtitle {
-      text-align: center;
-      margin-top: 40px;
-      margin-bottom: 20px;
-    }
-    
-    .section-subtitle h3 {
-      font-size: 24px;
-      font-weight: 600;
-      color: var(--primary-color);
-      position: relative;
-      display: inline-block;
-    }
-    
-    .section-subtitle h3:after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 50px;
-      height: 3px;
-      background: var(--secondary-color);
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    
-    .certificates-grid {
-      margin-top: 20px;
-    }
-    
-    .certificate-card {
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    
-    .certificate-item {
-      padding: 15px 0;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-    
-    .certificate-item:last-child {
-      border-bottom: none;
-    }
-    
-    .certificate-item h4 {
-      font-weight: 600;
-      color: var(--primary-color);
-      margin-bottom: 5px;
-    }
-    
-    .cert-link {
-      display: inline-block;
-      margin-top: 8px;
-      color: var(--secondary-color);
-      font-weight: 500;
-      transition: all 0.3s ease;
-    }
-    
-    .cert-link:hover {
-      color: var(--accent-color);
-    }
-    
-    .cert-link i {
-      font-size: 12px;
-      margin-left: 5px;
-    }
-      /* Publications Section Styling */
-  .publications-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
-    margin-top: 30px;
-  }
-  
-  .publication-card {
-    background: var(--background-light);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .publication-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  }
-  
-  .publication-header {
-    background: var(--primary-color);
-    color: var(--text-light);
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .publication-header i {
-    font-size: 24px;
-  }
-  
-  .publication-links a {
-    color: var(--text-light);
-    margin-left: 10px;
-    transition: color 0.3s ease;
-  }
-  
-  .publication-links a:hover {
-    color: var(--accent-color);
-  }
-  
-  .publication-body {
-    padding: 20px;
-  }
-  
-  .publication-body h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: var(--primary-color);
-  }
-  
-  .publication-meta {
-    font-size: 14px;
-    color: var(--secondary-color);
-    margin-bottom: 15px;
-    font-weight: 500;
-  }
-  
-  .publication-abstract {
-    font-size: 14px;
-    line-height: 1.6;
-    color: var(--text-dark);
-  }
-  </style>
+    <script src="scripts/neural-bg.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </body>
 </html>
