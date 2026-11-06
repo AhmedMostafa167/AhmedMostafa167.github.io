@@ -233,7 +233,7 @@
 
                     <aside class="about__stats reveal" aria-label="At a glance">
                         <div class="stat">
-                            <span class="stat__value" data-counter="3">0</span>
+                            <span class="stat__value" data-counter="4">0</span>
                             <span class="stat__label">Flagship<br>projects</span>
                         </div>
                         <div class="stat">
@@ -262,8 +262,8 @@
                     <div class="section__line"></div>
                 </div>
                 <p class="section__intro reveal">
-                    Three projects, each judged by numbers rather than demos. The Shopping Assistant has its own
-                    repository, the Research Assistant lives in
+                    Four projects, each judged by numbers rather than demos. The Shopping Assistant and the Arabic
+                    banking intent classifier have their own repositories, the Research Assistant lives in
                     <a href="https://github.com/AhmedMostafa167/Projects" target="_blank" rel="noopener">my monorepo</a>
                     with a live demo on Hugging Face Spaces, and VISIONEER became a published paper.
                 </p>
@@ -379,6 +379,44 @@
                             <a href="https://huggingface.co/spaces/Ahmed167/research_assistant"
                                class="bento__link bento__link--demo" target="_blank" rel="noopener">
                                 Live demo
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10M7 17L17 7"/></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="bento__card bento__card--featured reveal" style="--accent: 59, 130, 246;">
+                        <div class="bento__tag">ARABIC NLP · MLOPS · MODEL SERVING</div>
+                        <h3 class="bento__title">Arabic Banking Intent Classifier</h3>
+                        <p class="bento__desc">
+                            Fine-tuned AraBERT classifying Arabic banking messages into 77 intents, with a production-style
+                            system around it. Macro-F1 0.919 against 0.887 for a TF-IDF baseline, and on dialects unseen in
+                            training (Saudi, Moroccan, Tunisian) 0.843, 0.779 and 0.599 against 0.719, 0.612 and 0.499. The
+                            official validation split leaks paraphrases, so I built a grouped split, and a paired-bootstrap
+                            promotion gate in the MLflow registry decides which model serves. Served as ONNX fp16 from a
+                            FastAPI container without PyTorch (image 2.26 to 0.95 GB), load-tested with Locust and monitored
+                            with Prometheus and Grafana; a drift alert fires on unfamiliar dialect traffic.
+                        </p>
+                        <div class="bento__tech">
+                            <span>AraBERT</span>
+                            <span>PyTorch</span>
+                            <span>ONNX Runtime</span>
+                            <span>MLflow</span>
+                            <span>DVC</span>
+                            <span>FastAPI</span>
+                            <span>Docker</span>
+                            <span>Prometheus</span>
+                            <span>Grafana</span>
+                            <span>Locust</span>
+                        </div>
+                        <div class="bento__links">
+                            <a href="https://github.com/AhmedMostafa167/arabic_banking_intent"
+                               class="bento__link" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.4 7.86 10.92.58.1.79-.25.79-.55v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.52-1.34-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.07 11.07 0 015.79 0c2.21-1.49 3.18-1.18 3.18-1.18.62 1.58.23 2.75.11 3.04.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.06.78 2.13v3.16c0 .31.21.66.79.55 4.57-1.52 7.86-5.84 7.86-10.92C23.5 5.65 18.35.5 12 .5z"/></svg>
+                                Code
+                            </a>
+                            <a href="https://huggingface.co/Ahmed167/arabert-arbanking77-intents"
+                               class="bento__link bento__link--demo" target="_blank" rel="noopener">
+                                Model
                                 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 7h10v10M7 17L17 7"/></svg>
                             </a>
                         </div>
